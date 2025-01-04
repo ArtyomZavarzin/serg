@@ -43,15 +43,16 @@
       <section
         class="relative bg-cover bg-no-repeat bg-center overflow-hidden"
         style="background-image: url('assets/img/main-2.png'); min-height: 100vh; display: flex;"
+        id="contact"
       >
         <video
             autoplay
-            
             muted
+            loop
             class="absolute top-0 left-0 w-full h-full object-cover"
             id="video-block"
           >
-          <source src="assets/video/hero-video.mp4" type="video/mp4" />
+          <source src="assets/video/vid1.mp4" type="video/mp4" />
           Sizning brauzeringiz videoni qo'llab-quvvatlamaydi.
         </video>
         <div
@@ -92,23 +93,23 @@
               >
                 <a
                   class="font-bold lg:text-xl/[24.38px] transition duration-300 hover:opacity-75"
-                  href="index.html#"
+                  href="#contact"
                   >Контакты</a
                 >
                 <a
                   class="font-bold lg:text-xl/[24.38px] transition duration-300 hover:opacity-75"
-                  href="index.html#"
+                  href="#about"
                   >Обо мне</a
                 >
                 <a
                   class="font-bold lg:text-xl/[24.38px] transition duration-300 hover:opacity-75"
-                  href="index.html#"
+                  href="#project"
                   >Мои проекты</a
                 >
                 <div class="flex justify-end gap-10 xl:py-5">
                   <a
                     class="block shrink-0 transition duration-300 hover:opacity-75"
-                    href="index.html#"
+                    href="https://t.me/sobiraukorabli" target="_blank"
                   >
                     <img
                       class="size-7 lg:size-[34px]"
@@ -129,12 +130,13 @@
                 </div>
                 <a
                   class="font-bold lg:text-xl/[24.38px] transition duration-300 hover:opacity-75"
-                  href="index.html#"
+                  href="https://youtu.be/2vrhqVhw2qQ?si=Dtkf9ZaFRPrcual9" target="_blank"
                   >Смотреть подкаст</a
                 >
               </div>
             </div>
           </div>
+          <div id="sound" data-aos="zoom-out-up" style="opacity: 0.6; width: 70px; height: 70px; background-image: url(assets/svg/soundOff.svg); background-size: contain; background-position: center; background-repeat: no-repeat;"></div>
           <img class="mt-[20px] lg:mt-5 xl:mt-5" src="assets/svg/sergey2.svg" alt="sergey"  data-aos="zoom-out-up" style="width: 80%;">
         </div>
         <!-- <img
@@ -144,7 +146,7 @@
         /> -->
       </section>
       <!-- I create and develop successful business projects -->
-      <section class="relative pt-10 xl:pt-28 overflow-hidden">
+      <section class="relative pt-10 xl:pt-28 overflow-hidden" id="about">
         <div
           class="relative z-30 max-w-base mx-auto px-2.5 md:px-5 pt-16 lg:pt-20 pb-20 lg:pb-12"
         >
@@ -165,7 +167,7 @@
               <img
                 src="assets/svg/heading-3.svg"
                 alt="heading-3"
-                class="h-28 md:h-56 lg:h-96 xl:h-[525px] mt-0 xl:mt-56"
+                class="h-28 md:h-56 lg:h-96 xl:h-[540px] mt-0 xl:mt-56"
                 data-aos="fade-left"
               />
             </div>
@@ -178,7 +180,7 @@
                 Помогаю в принятии сложных и важных бизнес решений. С тем, что
                 неоднократно делал и активно продолжаю делать сам!
               </p>
-              <div class="flex justify-end mt-9 xl:mt-40">
+              <div class="flex justify-center mt-9 xl:mt-40">
                 <ul
                   class="max-w-[200px] md:max-w-full flex flex-col gap-y-5 lg:gap-y-11 font-inter list-disc"
                 >
@@ -258,7 +260,7 @@
         ></div>
       </section>
       <!-- My Projects -->
-      <section class="relative">
+      <section class="relative" id="project">
         <div
           class="relative z-10 max-w-base mx-auto px-2.5 md:px-5 pt-16 lg:pt-20 pb-20 lg:pb-32"
         >
@@ -667,5 +669,39 @@
 
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+      integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      SmoothScroll({
+        // Время скролла 400 = 0.4 секунды
+        animationTime: 500,
+        // Размер шага в пикселях
+        stepSize: 90,
+
+        // Дополнительные настройки:
+
+        // Ускорение
+        accelerationDelta: 60,
+        // Максимальное ускорение
+        accelerationMax: 2,
+
+        // Поддержка клавиатуры
+        keyboardSupport: true,
+        // Шаг скролла стрелками на клавиатуре в пикселях
+        arrowScroll: 50,
+
+        // Pulse (less tweakable)
+        // ratio of "tail" to "acceleration"
+        pulseAlgorithm: true,
+        pulseScale: 4,
+        pulseNormalize: 1,
+
+        // Поддержка тачпада
+        touchpadSupport: true,
+      });
+    </script>
   </body>
 </html>

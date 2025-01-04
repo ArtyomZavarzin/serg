@@ -23,7 +23,19 @@ window.addEventListener('load', function () {
 
   const video = this.document.getElementById('video-block');
 
-  video.addEventListener('ended', () => {
-    video.classList.add('hide');
+  // video.addEventListener('ended', () => {
+  //   video.classList.add('hide');
+  // });
+
+  let isMuted = true;
+  const soundBtn = this.document.getElementById('sound');
+  soundBtn.addEventListener('click', () => {
+    video.muted = !isMuted;
+    if (isMuted) {
+      soundBtn.style.backgroundImage = 'url(assets/svg/soundOn.svg)';
+    } else {
+      soundBtn.style.backgroundImage = 'url(assets/svg/soundOff.svg)';
+    }
+    isMuted = !isMuted;
   });
 });
