@@ -42,19 +42,21 @@
       <!-- Serial Entrepreneur -->
       <section
         class="relative bg-cover bg-no-repeat bg-center overflow-hidden"
-        style="background-image: url('assets/img/main-2.png')"
+        style="background-image: url('assets/img/main-2.png'); min-height: 100vh; display: flex;"
       >
         <video
             autoplay
-            loop
+            
             muted
             class="absolute top-0 left-0 w-full h-full object-cover"
+            id="video-block"
           >
           <source src="assets/video/hero-video.mp4" type="video/mp4" />
           Sizning brauzeringiz videoni qo'llab-quvvatlamaydi.
         </video>
         <div
-          class="relative z-10 max-w-base mx-auto px-2.5 md:px-5 pt-5 lg:pt-20 pb-20 lg:pb-12"
+          class="relative z-10 max-w-base mx-auto px-2.5 md:px-5 pt-5 pb-5"
+          style="display: flex; flex-direction: column; justify-content: space-between;"
         >
           <div class="flex justify-between gap-5">
             <h3
@@ -133,7 +135,7 @@
               </div>
             </div>
           </div>
-          <img class="mt-[450px] lg:mt-20 xl:mt-28" src="assets/svg/sergey2.svg" alt="sergey"  data-aos="zoom-out-up">
+          <img class="mt-[20px] lg:mt-5 xl:mt-5" src="assets/svg/sergey2.svg" alt="sergey"  data-aos="zoom-out-up">
         </div>
         <!-- <img
           class="absolute bottom-0 lg:bottom-auto lg:top-1/2 -translate-y-20 lg:-translate-y-1/2 z-0 size-[250px] md:size-80 lg:size-[700px] xl:size-[1000px]"
@@ -163,7 +165,7 @@
               <img
                 src="assets/svg/heading-3.svg"
                 alt="heading-3"
-                class="h-28 md:h-56 lg:h-96 xl:h-[565px] mt-0 xl:mt-56"
+                class="h-28 md:h-56 lg:h-96 xl:h-[525px] mt-0 xl:mt-56"
                 data-aos="fade-left"
               />
             </div>
@@ -392,138 +394,142 @@
         </div>
       </section>
       <!-- Data -->
-      <section class="relative mt-10 lg:mt-60 overflow-x-clip">
-        <div class="relative z-10 max-w-base mx-auto px-2.5 md:px-5">
-          <h2 class="font-semibold text-3xl md:text-5xl xl:text-[70px]/[85px] max-w-[533px] mt-10 xl:mt-0" data-aos="fade-right" data-aos-duration="3500">
-            Твёрдые факты обо мне
-          </h2>
+      <!-- <section class="relative mt-10 lg:mt-60 overflow-x-clip" style="min-height: 100vh; display:flex; flex-direction: column; justify-content: center">
+        <div class="relative z-10 max-w-base mx-auto px-2.5 md:px-10"> -->
+      <section class="relative mt-10 lg:mt-60 overflow-x-clip" style="min-height: 100vh; display:flex; flex-direction: column; justify-content: center">
+        <div style="width: 100%;">
+          <div class="relative z-10 max-w-base mx-auto px-2.5 md:px-5">
 
-          <div class="group relative">
-            <div class="flex flex-col xl:flex-row items-center justify-between gap-5 mt-8 xl:mt-16">
-              <div class="" data-aos="fade-right" data-aos-duration="3500">
-                <p class="max-w-[550px] font-inter xl:text-2xl">
-                  Родился в Томской области, в небольшом селе под названием
-                  “Калинка”. У меня было отличное дество и большая дружная
-                  семья. <br /><br />
-                  В 5 лет вся наша семья переехала в город Новосибирск и там я
-                  продолжил жить, пока в 1987 году не поступил в Томский
-                  Политех
-                </p>
-              </div>
-              <div class="relative">
-                <img
-                  class="object-cover w-full xl:w-auto h-80 xl:h-[567px]"
-                  src="assets/img/group.png"
-                  alt="group"
-                  data-aos="flip-up"
-                />
-                <!-- Next & Prev -->
-                <div class="xl:block">
-                  <button
-                    class="absolute top-1/2 -translate-y-1/2 -left-0 -translate-x-full transition duration-300 hover:opacity-75"
-                    style="border-radius: 50%; background: #3f3272; padding: 8px; left: 10px"
-                    id="prev-btn"
-                  >
-                    <svg
-                      width="9"
-                      height="16"
-                      viewBox="0 0 9 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
+
+            <div class="group relative">
+              <div class="flex flex-col xl:flex-row items-center justify-between gap-5">
+                <div class="" data-aos="fade-right" data-aos-duration="3500">
+                  <h2 class="font-semibold text-3xl md:text-5xl xl:text-[70px]/[85px] max-w-[533px] mt-10 xl:mt-0" data-aos="fade-right" data-aos-duration="3500" style="position: relative; top: -90px">
+                    Твёрдые факты обо мне
+                  </h2>
+                  <p class="max-w-[550px] font-inter xl:text-2xl">
+                    Родился в Томской области, в небольшом селе под названием
+                    “Калинка”. У меня было отличное дество и большая дружная
+                    семья. <br /><br />
+                    В 5 лет вся наша семья переехала в город Новосибирск и там я
+                    продолжил жить, пока в 1987 году не поступил в Томский
+                    Политех
+                  </p>
+                </div>
+                <div class="relative">
+                  <img
+                    class="object-cover w-full xl:w-auto h-80 xl:h-[567px]"
+                    src="assets/img/group.png"
+                    alt="group"
+                    data-aos="flip-up"
+                  />
+                  <!-- Next & Prev -->
+                  <div class="xl:block">
+                    <button
+                      class="absolute top-1/2 -translate-y-1/2 -left-5 -translate-x-full transition duration-300 hover:opacity-75"
+                      id="prev-btn"
                     >
-                      <path
-                        d="M0.292893 7.29289C-0.097631 7.68342 -0.097631 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM3 7H1L1 9H3V7Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </button>
-                  <button
-                    class="absolute top-1/2 -translate-y-1/2 right-0 translate-x-full transition duration-300 hover:opacity-75"
-                    style="border-radius: 50%; background: #3f3272; padding: 8px; right: 10px;"
-                    id="next-btn"
-                  >
-                    <svg
-                      class="rotate-180"
-                      width="9"
-                      height="16"
-                      viewBox="0 0 9 16"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
+                      <svg
+                        width="9"
+                        height="16"
+                        viewBox="0 0 9 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0.292893 7.29289C-0.097631 7.68342 -0.097631 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM3 7H1L1 9H3V7Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                    <button
+                      class="absolute top-1/2 -translate-y-1/2 -right-5 translate-x-full transition duration-300 hover:opacity-75"
+          
+                      id="next-btn"
                     >
-                      <path
-                        d="M0.292893 7.29289C-0.097631 7.68342 -0.097631 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM3 7H1L1 9H3V7Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </button>
+                      <svg
+                        class="rotate-180"
+                        width="9"
+                        height="16"
+                        viewBox="0 0 9 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M0.292893 7.29289C-0.097631 7.68342 -0.097631 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM3 7H1L1 9H3V7Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="swiper mySwiper mt-8" data-aos="fade-up" data-aos-delay="300">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="text-right" data-aos="fade-left" data-aos-duration="3500">
-                  <h3
-                    class="text-border-2 !font-semibold text-3xl xl:text-[100px]/[120px]"
-                  >
-                    1970
-                  </h3>
-                  <p class="font-semibold font-inter xl:text-2xl">
-                    Родился в Томске
-                  </p>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="text-right">
+            <div class="swiper mySwiper mt-8" data-aos="fade-up" data-aos-delay="300">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="text-right" data-aos="fade-left" data-aos-duration="3500">
                     <h3
                       class="text-border-2 !font-semibold text-3xl xl:text-[100px]/[120px]"
                     >
-                      1987- 1993
+                      1970
                     </h3>
                     <p class="font-semibold font-inter xl:text-2xl">
-                      Томский политех, инженер-физик 
+                      Родился в Томске
                     </p>
                   </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="ml-auto text-right" data-aos="fade-left data-aos-duration="3500">
-                  <h3
-                    class="text-border-2 !font-semibold text-3xl xl:text-[100px]/[120px]"
-                  >
-                    1998-2024
-                  </h3>
-                  <p class="font-semibold font-inter xl:text-2xl">
-                    Водоочистной бизнес, AWT
-                  </p>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="text-right">
-                  <h3
-                    class="text-border-2 !font-semibold text-3xl xl:text-[100px]/[120px]"
-                  >
-                    1988-1989
-                  </h3>
-                  <p class="font-semibold font-inter xl:text-2xl">
-                    Служба в советской армии
-                  </p>
+                <div class="swiper-slide">
+                  <div class="text-right">
+                      <h3
+                        class="text-border-2 !font-semibold text-3xl xl:text-[100px]/[120px]"
+                      >
+                        1987- 1993
+                      </h3>
+                      <p class="font-semibold font-inter xl:text-2xl">
+                        Томский политех, инженер-физик 
+                      </p>
+                    </div>
                 </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="ml-auto text-right" data-aos="fade-left data-aos-duration="3500">
-                  <h3
-                    class="text-border-2 !font-semibold text-3xl xl:text-[100px]/[120px]"
-                  >
-                    1993-1998
-                  </h3>
-                  <p class="font-semibold font-inter xl:text-2xl">
-                    Фармацевтический бизнес
-                  </p>
+                <div class="swiper-slide">
+                  <div class="ml-auto text-right" data-aos="fade-left data-aos-duration="3500">
+                    <h3
+                      class="text-border-2 !font-semibold text-3xl xl:text-[100px]/[120px]"
+                    >
+                      1998-2024
+                    </h3>
+                    <p class="font-semibold font-inter xl:text-2xl">
+                      Водоочистной бизнес, AWT
+                    </p>
+                  </div>
                 </div>
+                <div class="swiper-slide">
+                  <div class="text-right">
+                    <h3
+                      class="text-border-2 !font-semibold text-3xl xl:text-[100px]/[120px]"
+                    >
+                      1988-1989
+                    </h3>
+                    <p class="font-semibold font-inter xl:text-2xl">
+                      Служба в советской армии
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="ml-auto text-right" data-aos="fade-left data-aos-duration="3500">
+                    <h3
+                      class="text-border-2 !font-semibold text-3xl xl:text-[100px]/[120px]"
+                    >
+                      1993-1998
+                    </h3>
+                    <p class="font-semibold font-inter xl:text-2xl">
+                      Фармацевтический бизнес
+                    </p>
+                  </div>
+                </div>
+                
               </div>
-              
             </div>
           </div>
         </div>

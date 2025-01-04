@@ -626,6 +626,9 @@ body {
 .mt-10 {
   margin-top: 2.5rem;
 }
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
 .mt-12 {
   margin-top: 3rem;
 }
@@ -1770,4 +1773,12 @@ div.swiper-slide:not(.swiper-slide-active) > div > p {
 
 div.mySwiper {
   overflow: visible;
+}
+
+video {
+  transition: all 1s;
+}
+
+.hide {
+  opacity: 0;
 }

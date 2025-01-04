@@ -20,4 +20,10 @@ window.addEventListener('load', function () {
   this.document.getElementById('next-btn').addEventListener('click', () => {
     swiper.slideNext();
   });
+
+  const video = this.document.getElementById('video-block');
+
+  video.addEventListener('ended', () => {
+    video.classList.add('hide');
+  });
 });
