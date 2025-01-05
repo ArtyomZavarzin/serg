@@ -9,9 +9,21 @@ window.addEventListener('load', function () {
       el: '.swiper-pagination',
       clickable: true,
     },
-    slidesPerView: 'auto',
+    slidesPerView: 1.5,
     loop: true,
+    // centeredSlides: true,
     slideToClickedSlide: true,
+    breakpoints: {
+      1200: {
+        slidesPerView: 2,
+        spaceBetween: 50,
+      },
+      // when window width is >= 640px
+      1750: {
+        slidesPerView: 3,
+        spaceBetween: 80,
+      },
+    },
   });
 
   this.document.getElementById('prev-btn').addEventListener('click', () => {
